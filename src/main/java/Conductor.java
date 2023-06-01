@@ -1,29 +1,31 @@
 public class Conductor {
-	private Object nombre;
-	private Object apellido;
-	private Object numero_de_contacto;
-	private Object tipo_de_licencia;
-	private enum tipo;
-	private String attribute;
+	private String nombre;
 	private String apellido;
-	private Tipo tipoLicencia;
-	private int numeroContacto;
+	private String numeroDeContacto;
+	private TipoLicencia tipoLicencia;
 	public Bus bus;
 
-	public enum getTipo() {
-		return this.tipo;
+	public enum TipoLicencia {
+		A1,
+		A2,
+		A3,
+		A4,
+		A5
 	}
 
-	public void setTipo(enum tipo) {
-		this.tipo = tipo;
+	public Conductor(String nombre, String apellido, String numeroDeContacto, TipoLicencia tipoLicencia){
+		this.nombre=nombre;
+		this.apellido=apellido;
+		this.numeroDeContacto=numeroDeContacto;
+		this.tipoLicencia=tipoLicencia;
 	}
 
-	public String getAttribute() {
-		return this.attribute;
+	public String getNombre() {
+		return this.nombre;
 	}
 
-	public void setAttribute(String attribute) {
-		this.attribute = attribute;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public String getApellido() {
@@ -34,23 +36,19 @@ public class Conductor {
 		this.apellido = apellido;
 	}
 
-	public enum getTipoLicencia() {
-		throw new UnsupportedOperationException();
+	public String getNumeroDeContacto() {
+		return this.numeroDeContacto;
 	}
 
-	public void setTipoLicencia(enum tipoLicencia) {
-		throw new UnsupportedOperationException();
+	public void setNumeroDeContacto(String numeroDeContacto) {
+		this.numeroDeContacto = numeroDeContacto;
 	}
 
-	public void setTipoLicencia(Tipo tipoLicencia) {
+	public TipoLicencia getTipoLicencia() {
+		return this.tipoLicencia;
+	}
+
+	public void setTipoLicencia(TipoLicencia tipoLicencia) {
 		this.tipoLicencia = tipoLicencia;
-	}
-
-	public int getNumeroContacto() {
-		return this.numeroContacto;
-	}
-
-	public void setNumeroContacto(int numeroContacto) {
-		this.numeroContacto = numeroContacto;
 	}
 }

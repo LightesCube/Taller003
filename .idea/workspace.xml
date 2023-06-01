@@ -4,13 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f61e461-532b-4edd-b003-d9b2ec833286" name="Changes" comment="Se sube primer commit con diagrama de clases" />
+    <list default="true" id="0f61e461-532b-4edd-b003-d9b2ec833286" name="Changes" comment="Se sube segundo commit con codigo generado automaticamente mediante Visual Paradigm">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Conductor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Conductor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Empresa_Buses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Empresa_Buses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Viajes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Viajes.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2QcI6pVohYbCCRcDKiVfEiyKqbi" />
@@ -45,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685646271464</updated>
       <workItem from="1685646272722" duration="1107000" />
-      <workItem from="1685648308959" duration="374000" />
+      <workItem from="1685648308959" duration="5154000" />
     </task>
     <task id="LOCAL-00001" summary="Se sube primer commit con diagrama de clases">
       <created>1685648346422</created>
@@ -61,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685648356972</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Se sube segundo commit con codigo generado automaticamente mediante Visual Paradigm">
+      <created>1685648868753</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685648868753</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,6 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se sube primer commit con diagrama de clases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se sube primer commit con diagrama de clases" />
+    <MESSAGE value="Se sube segundo commit con codigo generado automaticamente mediante Visual Paradigm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se sube segundo commit con codigo generado automaticamente mediante Visual Paradigm" />
   </component>
 </project>

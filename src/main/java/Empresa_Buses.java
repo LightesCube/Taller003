@@ -1,43 +1,83 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Empresa_Buses {
-	private String attribute;
-	private String redesSociales;
-	private String direccion;
-	private Object attribute2;
 	private String rut;
-	public ArrayList<Bus> unnamed_Bus_ = new ArrayList<Bus>();
-	public ArrayList<Viajes> viaje = new ArrayList<Viajes>();
+	private String direccion;
+	private String redesSociales;
+	private ArrayList<Bus> buses = new ArrayList<>();
+	private ArrayList<Viajes> viajes = new ArrayList<>();
 
-	public String getAttribute() {
-		return this.attribute;
+	public String getRut() {
+		return rut;
 	}
 
-	public void setAttribute(String attribute) {
-		this.attribute = attribute;
-	}
-
-	public String getRedesSociales() {
-		return this.redesSociales;
-	}
-
-	public void setRedesSociales(String redesSociales) {
-		this.redesSociales = redesSociales;
+	public void setRut(String rut) {
+		this.rut = rut;
 	}
 
 	public String getDireccion() {
-		return this.direccion;
+		return direccion;
 	}
 
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
 	}
 
-	public String getRut() {
-		return this.rut;
+	public String getRedesSociales() {
+		return redesSociales;
 	}
 
-	public void setRut(String rut) {
-		this.rut = rut;
+	public void setRedesSociales(String redesSociales) {
+		this.redesSociales = redesSociales;
 	}
+
+	public ArrayList<Bus> getBuses() {
+		return buses;
+	}
+
+	public void agregarBus(Bus bus) {
+		buses.add(bus);
+	}
+
+	public ArrayList<Viajes> getViajes() {
+		return viajes;
+	}
+
+	public void agregarViaje(Viajes viaje) {
+		viajes.add(viaje);
+	}
+
+		private List<Conductor> conductores;
+
+		public Empresa_Buses(String rut, String direccion, String redesSociales) {
+		this.rut=rut;
+		this.direccion=direccion;
+		this.redesSociales=redesSociales;
+		}
+
+		public void agregarBus(String patente, String marca, String modelo) {
+			Bus nuevoBus = new Bus(patente, marca, modelo);
+			this.buses.add(nuevoBus);
+
+			System.out.println("Bus agregado correctamente.");
+		}
+
+		public void agregarConductor(String nombre, String apellido, String numeroContacto, Conductor.TipoLicencia tipoLicencia) {
+			if (!validarTipoLicencia(String.valueOf(tipoLicencia))) {
+				System.out.println("Tipo de licencia inválido.");
+				return;
+			}
+
+			Conductor nuevoConductor = new Conductor(nombre, apellido, numeroContacto, tipoLicencia);
+			this.conductores.add(nuevoConductor);
+
+			System.out.println("Conductor agregado correctamente.");
+		}
+
+		private boolean validarTipoLicencia(String tipoLicencia) {
+			return false;
+		}
+	}
+
 }

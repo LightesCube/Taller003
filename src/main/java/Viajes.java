@@ -4,21 +4,29 @@ public class Viajes {
 	private ArrayList<String> pasajeros;
 	private String ciudadOrigen;
 	private String ciudadDestino;
-	private String horaLlegada;
 	private String horaSalida;
+	private String horaLlegada;
 	private int cantidadPasajeros;
-	public ArrayList<Empresa_Buses> empresa = new ArrayList<Empresa_Buses>();
+	public ArrayList<Empresa_Buses> empresas = new ArrayList<>();
+
+	public Viajes(String ciudadOrigen, String ciudadDestino, String horaSalida, String horaLlegada, int cantidadPasajeros){
+		this.ciudadOrigen=ciudadOrigen;
+		this.ciudadDestino=ciudadDestino;
+		this.horaSalida=horaSalida;
+		this.horaLlegada=horaLlegada;
+		this.cantidadPasajeros=cantidadPasajeros;
+	}
 
 	public ArrayList<String> getPasajeros() {
-		throw new UnsupportedOperationException();
+		return pasajeros;
 	}
 
 	public void setPasajeros(ArrayList<String> pasajeros) {
-		throw new UnsupportedOperationException();
+		this.pasajeros = pasajeros;
 	}
 
 	public String getCiudadOrigen() {
-		return this.ciudadOrigen;
+		return ciudadOrigen;
 	}
 
 	public void setCiudadOrigen(String ciudadOrigen) {
@@ -26,31 +34,31 @@ public class Viajes {
 	}
 
 	public String getCiudadDestino() {
-		return this.ciudadDestino;
+		return ciudadDestino;
 	}
 
 	public void setCiudadDestino(String ciudadDestino) {
 		this.ciudadDestino = ciudadDestino;
 	}
 
-	public String getHoraLlegada() {
-		return this.horaLlegada;
-	}
-
-	public void setHoraLlegada(String horaLlegada) {
-		this.horaLlegada = horaLlegada;
-	}
-
 	public String getHoraSalida() {
-		return this.horaSalida;
+		return horaSalida;
 	}
 
 	public void setHoraSalida(String horaSalida) {
 		this.horaSalida = horaSalida;
 	}
 
+	public String getHoraLlegada() {
+		return horaLlegada;
+	}
+
+	public void setHoraLlegada(String horaLlegada) {
+		this.horaLlegada = horaLlegada;
+	}
+
 	public int getCantidadPasajeros() {
-		return this.cantidadPasajeros;
+		return cantidadPasajeros;
 	}
 
 	public void setCantidadPasajeros(int cantidadPasajeros) {
